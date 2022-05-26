@@ -15,17 +15,46 @@
 <form id="survey-form" action="">
   <label id="name-label" for="name">Name</label>
    <br>
-  <input id="name" type="text" required>
+  <input id="name" type="text" required placeholder="Enter Your Name">
   <br>
-  <label id="email-label" for="email">Email</label>
+  <label id="email-label" for="email" >Email</label>
   <br>
-  <input id="email" type="email" required>
+  <input id="email" type="email" required placeholder="Enter Your Email">
   <br>
-  <label id="age-label" for="age">Age</label>
+  <label id="number-label" for="age">Age</label>
   <br>
-  <input id="number" type="number" min="10" max="120">
+  <input id="number" type="number" min="10" max="120" placeholder="Enter Your Age"><br>
+  <label id="mood-label" for="mood">Mood</label><br>
+  <select name="mood" id="dropdown"  >
+    <option disabled selected value>Select your mood!</option>
+    <option value="Happy">Happy</option>
+    <option value="Good">Good</option>
+    <option value="loving">Loving</option>
+    <option value="scared">scared</option>
+    <option value="angry">angry</option>
+    <option value="sad">sad</option>
+  </select><br>
 
+  <label id="news-label">would you like to subscibe to our newsletter</label><br>
+  <input type="radio" name="news" value="Yes">
+  <label for="option">YES</label><br>
+  <input type="radio" name="news" value="No">
+  <label for="option">no</label><br>
 
+  <label id="hobby-label">what is your hobby</label><br>
+  <input type="checkbox" value="drawing">
+  <label for="option">drawing</label><br>
+  <input type="checkbox" value="Swimming">
+  <label for="option">Swimming</label><br>
+  <input type="checkbox" value="skating ">
+  <label for="option">skating </label><br>
+  <input type="checkbox" value="football ">
+  <label for="option">football </label><br>
+
+  <label id="comment-label">Any comments or suggestions?</label><br>
+  <textarea id="textare" placeholder="Enter Your comment ...."></textarea><br>
+
+  <button id="submit" type="submit">submit</button>
 
 
 </form>
